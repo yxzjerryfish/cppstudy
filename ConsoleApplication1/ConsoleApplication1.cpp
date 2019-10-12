@@ -2,10 +2,15 @@
 //
 
 #include <iostream>
+#include <string>
 
 int main()
 {
     std::cout << "Hello World!\n";
+	std::string name;
+	std::cin >> name;
+	std::cout << "hello ," << std::endl;
+	std::cout << name.size() << std::endl;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
