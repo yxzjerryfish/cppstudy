@@ -11,6 +11,11 @@ int main()
 	std::cin >> name;
 	std::cout << "hello ," << std::endl;
 	std::cout << name.size() << std::endl;
+
+	int x = 0;
+	decltype(x) y = x;
+
+	return 0;
 }
 
 // 运行程序: Ctrl + F5 或调试 >“开始执行(不调试)”菜单
