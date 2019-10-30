@@ -4,17 +4,24 @@
 #include <iostream>
 #include <string>
 
+template<typename T>
+T sum(T a,T b)
+{
+	return a + b;
+}
+
 int main()
 {
-    std::cout << "Hello World!\n";
+	/*std::cout << "hello world!\n";
 	std::string name;
 	std::cin >> name;
 	std::cout << "hello ," << std::endl;
 	std::cout << name.size() << std::endl;
 
 	int x = 0;
-	decltype(x) y = x;
+	decltype(x) y = x;*/
 
+	std::cout << sum<int>(111, 999);
 	return 0;
 }
 
