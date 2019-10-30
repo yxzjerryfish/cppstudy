@@ -4,8 +4,14 @@
 #include <iostream>
 #include <string>
 
+template<typename T1,typename T2,typename T3>
+T3 sum(T1 a,T2 b)
+{
+	return (T2)a + b;
+}
+
 template<typename T>
-T sum(T a,T b)
+T sum(T a, T b)
 {
 	return a + b;
 }
@@ -21,7 +27,8 @@ int main()
 	int x = 0;
 	decltype(x) y = x;*/
 
-	std::cout << sum<int>(111, 999);
+	std::cout << sum<int>(111, 999)<<std::endl;
+	std::cout << sum<int,double,double>(111, 999.999);
 	return 0;
 }
 
