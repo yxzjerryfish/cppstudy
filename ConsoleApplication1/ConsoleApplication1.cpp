@@ -26,7 +26,6 @@ int main()
 
 	int x = 0;
 	decltype(x) y = x;*/
-
 	std::cout << sum<int>(111, 999)<<std::endl;
 	std::cout << sum<int,double,double>(111, 999.999);
 	return 0;
